@@ -1,4 +1,5 @@
 // 7 Aug 2017; add pin 5
+// 7 Aug 2017: add pin 9
 /*
   Blink
   Turns on an LED on for one second, then off for one second, repeatedly.
@@ -21,6 +22,7 @@
   by Colby Newman
 */
 int pin5 = 5;
+int pin9 = 9;
 
 // the setup function runs once when you press reset or power the board
 void setup() {
@@ -33,6 +35,8 @@ void setup() {
 void loop() {
   digitalWrite(LED_BUILTIN, HIGH);   // turn the LED on (HIGH is the voltage level)
   delay(1000);                       // wait for a second
+  digitalWrite(pin5, HIGH);
   digitalWrite(LED_BUILTIN, LOW);    // turn the LED off by making the voltage LOW
+  digitalWrite(pin5, LOW);
   delay(1000);                       // wait for a second
 }
