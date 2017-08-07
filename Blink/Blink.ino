@@ -1,3 +1,4 @@
+// 7 Aug 2017; add pin 5
 /*
   Blink
   Turns on an LED on for one second, then off for one second, repeatedly.
@@ -19,7 +20,7 @@
   modified 8 Sep 2016
   by Colby Newman
 */
-
+int pin5 = 5;
 
 // the setup function runs once when you press reset or power the board
 void setup() {
